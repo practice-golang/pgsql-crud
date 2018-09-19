@@ -22,7 +22,9 @@ dbinfo := fmt.Sprintf(
     "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
     dbHost, dbPort, dbUser, dbPassword, dbName)
 db, err := sql.Open("postgres", dbinfo)
-chkErr(err)
+if err != nil {
+    log.Fatal(err)
+}
 defer db.Close()
 ```
 ```sh
