@@ -9,6 +9,7 @@ Practice for PostgreSQL
 ## Packages using
 https://github.com/lib/pq
 
+## Note
 When at least one variable or more variables in dbinfo have empty, I met below error.  
 In my case, I entered empty password.  
 So, each values(=%s) should be wrapped single quotes(='').  
