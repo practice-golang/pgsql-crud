@@ -16,17 +16,17 @@ const (
 	dbName     = "postgres"
 )
 
+// SQLDB - Books DB Object / Bookshelf
+type SQLDB struct {
+	db    *sql.DB
+	table string
+}
+
 // Book - A book info
 type Book struct {
 	_id    int
 	title  string
 	author string
-}
-
-// SQLDB - Books DB Object / Bookshelf
-type SQLDB struct {
-	db    *sql.DB
-	table string
 }
 
 // Create Table
