@@ -11,7 +11,7 @@ https://github.com/lib/pq
 
 When at least one variable or more variables in dbinfo have empty, I met below error.  
 In my case, I entered empty password.  
-So, each values(=%s) sould be wrapped single quotes(='').  
+So, each values(=%s) should be wrapped single quotes(='').  
 
 Int which wrapped single quotes would show error.  
 I don't know that the reason is caused from pgsql or lib/pq
