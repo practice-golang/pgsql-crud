@@ -153,7 +153,6 @@ func main() {
 	defer bookshelf.db.Close()
 
 	// Create table
-	// bookshelf.table = "books"
 	bookshelf.table = "novel"
 	bookshelf.createTable()
 
