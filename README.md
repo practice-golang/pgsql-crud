@@ -15,7 +15,7 @@ In my case, I entered empty password.
 So, each values(=%s) should be wrapped single quotes(='').  
 
 Int which unwrapped single quotes would show error.  
-I don't know that the reason is caused from pgsql or lib/pq
+I don't know which is the trouble maker, pgsql or lib/pq
 ```go
 dbinfo := fmt.Sprintf(
     //"host='%s' port='%s' user='%s' password='%s' dbname='%s' sslmode='disable'",
